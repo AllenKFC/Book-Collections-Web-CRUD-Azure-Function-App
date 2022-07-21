@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Create</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Add your book to the list!</p>
+
+        <form id="create-book">
+            Title:<br>
+            <input type="text" name="title" id="title-id"><br>
+            Author:<br>
+            <input type="text" name="author" id="author-id"><br>
+            Date Published:<br>
+            <input type="text" name="date_published" id="dp-id"><br>
+            <input type="submit" name="submit" id="submit-new">
+        </form>
+
+    </div>
+    
+    {{>footer}}
+
+    <script src="/js/create.js" ></script>
+</body>
+</html>

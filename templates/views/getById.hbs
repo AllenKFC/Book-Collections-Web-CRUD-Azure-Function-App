@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Get Book</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p id="bookDetail"></p>
+        
+        <form id="update-form">
+            Title:<br>
+            <input type="text" name="title_update" id="title-update"><br>
+            Author:<br>
+            <input type="text" name="author_update" id="author-update"><br>
+            Date Published:<br>
+            <input type="text" name="date_published_update" id="dp-update"><br>
+            <input type="submit" name="submit_update" id="submit-new-update">
+            <button style="width:60px" onclick="deleteBook()">Delete</button>
+        </form>
+
+        <p id="message-suc"></p>
+    </div>
+    
+    {{>footer}}
+
+    <script src="/js/getById.js"></script>
+</body>
+</html>
